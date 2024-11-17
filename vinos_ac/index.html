@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace con FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/845b957349.js" crossorigin="anonymous"></script>
+    <!-- Enlace con HOJA DE ESTILOS CSS -->
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./static/img/m_wine.png">
+    <!-- Enlace para icononos "X" y "menu" del menu hamburguesa  -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <!-- Aqui va el TITULO DE LA PAGINA -->
+    <title>Vinos atardecer cuyano - Inicio</title>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Aqui comienza el HEADER -->
+        <section id="Home" class="logo-nav-container">
+
+            <!-- LOGO HEADER -->
+            <!-- COLORES: ROJO #E40C0C; NEGRO #291010;  -->
+            <a href="./index.html"><img src="./static/img/m_wine.png" alt="Pizza ¡YAPA!"></a>
+            
+            <!-- MARCA -->
+            <h1 hidden>VinosAC</h1>
+
+            <!-- BARRA DE NAVEGACION -->
+            <nav class="navigation">
+                <!-- inicio html para menu hambuerguesa -->
+                <input class="checkbox" name=" check" type="checkbox">
+                <i class="icons burguer fi fi-br-menu-burger"></i>
+                <i class="icons cross fi fi-br-cross"></i>
+                <!-- fin html para menu hambuerguesa -->
+        
+
+                <ul id="nav-bar">
+                    <!-- <li class="nav-bar"><a href="#Home">Home</a></li> -->
+                    <!-- <li class="nav-bar"><a href="#Promos">Promos</a></li>
+                    <li class="nav-bar"><a href="#Opiniones">Opiniones</a></li>
+                    <li class="nav-bar"><a href="#Horarios">Horarios</a></li>
+                    <li class="nav-bar"><a href="#Delivery">Delivery</a></li> -->
+                    <li class="nav-bar"><a class="nav-link" href="templates/menu.html">Menu</a></li>
+                    <li class="nav-bar"><a class="nav-link" href="templates/sucursal.html">Sucursales</a></li>
+                    <li class="nav-bar"><a class="nav-link" href="templates/contacto.html">Contacto</a></li>
+                    <li class="nav-bar"><a class="nav-link" href="templates/quienessomos.html">Quienes somos</a></li>
+                    <li class="nav-bar"><a class="nav-link" href="templates/crud-pizzas.html">-- Back Office --</a></li>
+                </ul>
+            </nav>
+             <br>
+        </section>
+    </header>
+
+
+    
+    <main>
+        <!-- Aqui comienza el MAIN -->
+
+        <script src="/js/pediahora.js"></script>
+        
+        <section id="Promos">
+
+            <div class="promos-big-box">
+
+                <div class="box-title">
+                    <h2>¡Promociones!</h2>
+                </div>
+                
+
+                <!-- contenedor padre -->
+                <div class="flex-container">
+
+                    <!-- contenedor items hijos -->
+                    <div id="promo-1" class="promo-container">
+                        <div class="caja-img-promo">
+                            <img class="img-promo" src="./static/img/promos/th.jpg" alt="">
+                        </div>
+                        <div class="caja-info-promo">
+                            <p class="nombre-producto">Mendoza oro</p>
+                            <p class="descripcion-producto">seis botella al precio de cinco</p>
+                        </div>
+
+                        <div class="box-button">
+                            <button class="button-pedi-ahora" type="button" onclick="pediAhora()">¡Pedí ahora!</button>
+                        </div>
+
+                    </div>
+
+                    <div id="promo-2" class="promo-container">
+                        <div class="caja-img-promo">
+                            <img class="img-promo" src="./static/img/promos/promo2.jpg" alt="">
+                        </div>
+                        <div class="caja-info-promo">
+                            <p class="nombre-producto">San Juan Oro</p>
+                            <p class="descripcion-producto">seis botellas de vino blanco al precio de cuatro</p>
+                        </div>
+
+                        <div class="box-button">
+                            <button class="button-pedi-ahora" type="button" onclick="pediAhora()">¡Pedí ahora!</button>
+                        </div>
+                        
+                    </div>
+
+                    <div id="promo-3" class="promo-container">
+                        <div class="caja-img-promo">
+                            <img class="img-promo" src="./static/img/promos/promo4.jpg" alt="">
+                        </div>
+                        <div class="caja-info-promo">
+                            <p class="nombre-producto">Magistral</p>
+                            <p class="descripcion-producto">diez botellas al precio de siete
+                            </p>
+                        </div>
+
+                        <div class="box-button">
+                            <button class="button-pedi-ahora" type="button" onclick="pediAhora()">¡Pedí ahora!</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="Opiniones">
+
+            <div class="box-title">
+                <h2>Opiniones</h2>
+            </div>
+            
+
+            <div class="box-background">
+
+                <div class="box-opiniones">
+
+                    <div id="opinion-1" class="opinion">
+                        <h3>"rico y sabroso..."</h3>
+                        <p>"¡Me gusto la clase de Vinos que hacen! Ricos y sabrosos. El tinto tiene un cuerpo unico"</p>
+                    </div>
+        
+                    <div id="opinion-2" class="opinion">
+                        <h3>"...es de otro mundo..."</h3>
+                        <p>"Una de las mejores vinos Argentinas que pude probar,  complementa perfecto las comidas."</p>
+                    </div>
+        
+                    <div id="opinion-3" class="opinion">
+                        <h3>"...espectaculares vinos... Nos encantó"</h3>
+                        <p>"¡Una delicia! Se nota que los ingredientes son seleccionados, tanto por su sabor como por la presentación. Nos encantó."</p>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+            
+            
+        </section>
+
+
+        <!-- Seccion HORARIOS a agregar a pedido en caso de ser necesario -->
+        <!-- <section id="Horarios">
+
+            <div class="box-title">
+                <h2>Horarios</h2>
+            </div>
+
+
+            <div>
+                <br><br><br><br><br><br><br><br>
+            </div>
+
+        
+        </section> -->
+
+
+        <!-- Seccion DELIVERY a agregar a pedido en caso de ser necesario -->
+        <!-- <section id="Delivery">
+
+            <div class="box-title">
+                <h2>Delivery</h2>
+            </div>
+
+
+        </section> -->
+
+
+    </main>
+
+    <footer>
+        <h3>¡Seguinos en nuestras redes!</h3>
+        <div class="box-redes"><a href="https://www.instagram.com" target="_blank"><i style="color: #291010" class="fa-brands fa-instagram fa-xl"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i style="color: #291010" class="fa-brands fa-facebook-f fa-xl"></i></a></div>
+        <br>
+        <p>© 2024 <strong class="strong-footer">Vinos_AC</strong> Derechos Reservados.</p>
+    </footer>
+
+</body>
+
+</html>

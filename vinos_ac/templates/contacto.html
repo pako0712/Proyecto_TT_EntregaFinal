@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace con FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/845b957349.js" crossorigin="anonymous"></script>
+    <!-- Enlace con HOJA DE ESTILOS CSS -->
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../static/img/m_wine.png">
+    <!-- Enlace para icononos "X" y "menu" del menu hamburguesa  -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <!-- Aqui va el TITULO DE LA PAGINA -->
+    <title>Vinos atardecer cuyano - Contacto</title>
+
+</head>
+
+<body>
+    
+    <header class="header">
+        <!-- Aqui comienza el HEADER -->
+        <section id="Home" class="logo-nav-container">
+    
+            <!-- LOGO HEADER -->
+            <!-- COLORES: ROJO #E40C0C; NEGRO #291010;  -->
+            <a href="../index.html"><img src="../static/img/m_wine.png" alt="Vinos_AC"></a>
+            
+            <!-- MARCA -->
+            <h1 hidden>Vinos_AC</h1>
+    
+            <!-- BARRA DE NAVEGACION -->
+            <nav class="navigation">
+                <!-- inicio html para menu hambuerguesa -->
+                <input class="checkbox" name=" check" type="checkbox">
+                <i class="icons burguer fi fi-br-menu-burger"></i>
+                <i class="icons cross fi fi-br-cross"></i>
+                <!-- fin html para menu hambuerguesa -->
+        
+    
+                <ul id="nav-bar">
+                    <!-- <li class="nav-bar"><a href="#Home">Home</a></li> -->
+                    <!-- <li class="nav-bar"><a href="#Promos">Promos</a></li>
+                    <li class="nav-bar"><a href="#Opiniones">Opiniones</a></li>
+                    <li class="nav-bar"><a href="#Horarios">Horarios</a></li>
+                    <li class="nav-bar"><a href="#Delivery">Delivery</a></li> -->
+                    <li class="nav-bar"><a class="nav-link" href="../templates/menu.html">Menu</a></li>
+                    <li class="nav-bar"><a class="nav-link" href="../templates/sucursal.html">Sucursales</a></li>
+                    <li class="nav-bar"><a class="nav-link" href="../templates/contacto.html">Contacto</a></li>
+                    <li class="nav-bar"><a class="nav-link" href="../templates/quienessomos.html">Quienes somos</a></li>
+                    <li class="nav-bar"><a class="nav-link" href="../templates/crud-pizzas.html">-- Back Office --</a></li>
+                </ul>
+            </nav>
+             <br>
+        </section>
+      </header>
+
+
+    <main>
+        <!-- Aqui comienza el MAIN -->
+        <!-- El sitio web debe incluir un formulario de contacto, con al menos 5
+            campos que incluya (un checkbox o radiobutton), un select y una
+            imagen, con validación realizada mediante JavaScript para que los
+            campos sean obligatorios. -->
+
+        <div class="box-title" id="box-title-form">
+            <h2>¡Dejanos tus comentarios!</h2>
+        </div>
+        
+        <div class="flex-container">
+        
+            <div class="box-form-container">
+
+                <form name="form-contact" id="form-contact" method="post" enctype="text/plain" action="../static/formdata/infoFormularioValidado.php">
+                
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" size="30" maxlength="100" placeholder="...su nombre">
+
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" id="apellido" name="apellido" size="30" maxlength="100" placeholder="...su apellido">
+
+                    <label for="email">Correo electrónico: </label>
+                    <input type="text" id="email" name="email" size="30" maxlength="120" placeholder="...nombreapellido@servidor.com">
+
+                    <label for="coment">Mensaje: </label>
+                    <textarea name="coment" id="coment" maxlength="360" placeholder="...aquí, tu comentario" rows="10" cols="30"></textarea>
+
+                    <div class="more-info">
+
+                        <p>Quisiera recibir novedades y ofertas</p>
+                        <input type="radio" name="more-info" id="more-info" value="1" checked /><p>Si</p>
+                        <input type="radio" name="more-info" value="0"><p>No</p>
+                        
+                        <input class="checkbox" type="checkbox" name="news-suscription" id="news-suscription" checked />
+                        <p>Suscribirse a nuestra Newsletter</p>
+                    
+                    </div>
+
+                    <input name="submit" id="submit" class="button-submit" type="submit" value="Enviar" onclick="">
+
+                </form>
+
+                <script src="../js/contacto.js"></script>
+
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <h3>¡Seguinos en nuestras redes!</h3>
+        <div class="box-redes"><a href="https://www.instagram.com" target="_blank"><i style="color: #291010" class="fa-brands fa-instagram fa-xl"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i style="color: #291010" class="fa-brands fa-facebook-f fa-xl"></i></a></div>
+        <br>
+        <p>© 2024 <strong class="strong-footer">Vinos_AC</strong> Derechos Reservados.</p>
+    </footer>
+    
+</body>
+
+</html>
