@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras con LocalStorage</title>
+    
+    <link rel="stylesheet" href="./styles_ca.css">
+    
+</head>
+<body>
+   
+    <div class="container">
+        <h1>Vinos Atardecer Cuyano</h1>
+        <div class="products">
+            <!-- <div class="product">
+                <h3>Producto 1</h3>
+                <p>$10</p>
+                <button onclick="agregarAlCarrito('Producto 1', 10)">Agregar al carrito</button>
+            </div> -->
+            <!-- <div class="product">
+                <h3>Producto 2</h3>
+                <p>$15</p>
+                <button onclick="agregarAlCarrito('Producto 2', 15)">Agregar al carrito</button>
+            </div> -->
+            <!-- <div class="product">
+                <h3>Producto 3</h3>
+                <p>$20</p>
+                <button onclick="agregarAlCarrito('Producto 3', 20)">Agregar al carrito</button>
+            </div> -->
+        </div>
+
+        <h2>Productos agregados a su compra</h2>
+        <ul id="carrito"></ul>
+        <p><strong>Total: $<span id="total">0</span></strong></p>
+        <button onclick="vaciarCarrito()">Vaciar carrito</button>
+        <br><br><br>
+        <button><a href="../menu.html">Volver a Productos</a></button>
+        <br><br><br>
+        <button id="finalizarCompra" onclick="vaciarCarrito() "><a href="../menu.html">Finalizar su compra</a></button>
+        <div id="mensajeGracias" class="mensaje"> 
+            ¡Gracias por su compra! 🎉
+            pediAhora();
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+ 

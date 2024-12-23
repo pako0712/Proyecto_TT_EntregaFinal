@@ -45,11 +45,19 @@
                 <li class="nav-bar"><a href="#Opiniones">Opiniones</a></li>
                 <li class="nav-bar"><a href="#Horarios">Horarios</a></li>
                 <li class="nav-bar"><a href="#Delivery">Delivery</a></li> -->
-                <li class="nav-bar"><a class="nav-link" href="../templates/menu.html">Menu</a></li>
+                <li class="nav-bar"><a class="nav-link" href="../templates/menu.html">Productos</a></li>
                 <li class="nav-bar"><a class="nav-link" href="../templates/sucursal.html">Sucursales</a></li>
                 <li class="nav-bar"><a class="nav-link" href="../templates/contacto.html">Contacto</a></li>
                 <li class="nav-bar"><a class="nav-link" href="../templates/quienessomos.html">Quienes somos</a></li>
                 <li class="nav-bar"><a class="nav-link" href="../templates/crud-pizzas.html">-- Back Office --</a></li>
+                <li class="nav-bar"><a class ="nav-link" href="./carrito/carrito.html" class="">                                
+                  <div class="cart-li">
+                      <i class="fa fa-cart-shopping" style="color: white;"></i>
+                      <!-- <p>2</p>
+                      <p>$<span>559998.00</span></p> -->
+                  </div>                                
+          </a>
+      </li>
             </ul>
         </nav>
          <br>
@@ -70,6 +78,10 @@
             <div class="precio-plato-carta">
               <span>$ 13.500</span>
             </div>
+            <div class="box-button">
+              <!-- <button class="button-pedi-ahora" type="button" onclick="pediAhora()">Comprar</button> -->
+              <button class="boton_ag"  onclick="agregarAlCarrito('Cabernet Sauvignon', 13500)">Agregar al carrito</button>
+          </div>
           </div>
           <div class="plato-carta">
             <div class="title-plato-carta">
@@ -79,6 +91,10 @@
             <div class="precio-plato-carta">
               <span>$15.000</span>
             </div>
+            <div class="box-button">
+              <!-- <button class="button-pedi-ahora" type="button" onclick="pediAhora()">Comprar</button> -->
+              <button  class="boton_ag" onclick="agregarAlCarrito('Pinot Noir', 15000)">Agregar al carrito</button>
+          </div>
           </div> 
           <div class="plato-carta">
             <div class="title-plato-carta">
@@ -88,6 +104,10 @@
             <div class="precio-plato-carta">
               <span>$ 13.800</span>
             </div>
+            <div class="box-button">
+              <!-- <button class="button-pedi-ahora" type="button" onclick="pediAhora()">Comprar</button> -->
+              <button  class="boton_ag" onclick="agregarAlCarrito('Malbec', 13800)">Agregar al carrito</button>
+          </div>
           </div>
           <div class="plato-carta">
             <div class="title-plato-carta">
@@ -97,6 +117,10 @@
             <div class="precio-plato-carta">
               <span>$ 16200</span>
             </div>
+            <div class="box-button">
+              <!-- <button class="button-pedi-ahora" type="button" onclick="pediAhora()">Comprar</button> -->
+              <button  class="boton_ag" onclick="agregarAlCarrito('Syrah', 16200)">Agregar al carrito</button>
+          </div>
           </div>
           <div class="plato-carta">
             <div class="title-plato-carta">
@@ -106,6 +130,10 @@
             <div class="precio-plato-carta">
               <span>$ 14.500</span>
             </div>
+            <div class="box-button">
+              <!-- <button class="button-pedi-ahora" type="button" onclick="pediAhora()">Comprar</button> -->
+              <button  class="boton_ag" onclick="agregarAlCarrito('Tempranillo', 14500)">Agregar al carrito</button>
+          </div>
           </div>    
         </div>
         <div class="wrap-title-section">
@@ -120,6 +148,10 @@
             <div class="precio-plato-carta">
               <span>$ 23.000</span>
             </div>
+            <div class="box-button">
+              <!-- <button class="button-pedi-ahora" type="button" onclick="pediAhora()">Comprar</button> -->
+              <button  class="boton_ag" onclick="agregarAlCarrito('Chardonnay', 23000)">Agregar al carrito</button>
+          </div>
           </div>
           <div class="plato-carta">
             <div class="title-plato-carta">
@@ -129,6 +161,10 @@
             <div class="precio-plato-carta">
               <span>$ 14.000</span>
             </div>
+            <div class="box-button">
+              <!-- <button class="button-pedi-ahora" type="button" onclick="pediAhora()">Comprar</button> -->
+              <button  class="boton_ag" onclick="agregarAlCarrito('Riesling', 14000)">Agregar al carrito</button>
+          </div>
           </div> 
           <div class="plato-carta">
             <div class="title-plato-carta">
@@ -138,6 +174,10 @@
             <div class="precio-plato-carta">
               <span>$ 24.200</span>
             </div>
+            <div class="box-button">
+              <!-- <button class="button-pedi-ahora" type="button" onclick="pediAhora()">Comprar</button> -->
+              <button  class="boton_ag" onclick="agregarAlCarrito('Pinot Gris', 24200)">Agregar al carrito</button>
+          </div>
           </div>
           <div class="plato-carta">
             <div class="title-plato-carta">
@@ -147,6 +187,10 @@
             <div class="precio-plato-carta">
               <span>$ 13.700</span>
             </div>
+            <div class="box-button">
+              <!-- <button class="button-pedi-ahora" type="button" onclick="pediAhora()">Comprar</button> -->
+              <button  class="boton_ag" onclick="agregarAlCarrito('Pinot blanc', 13700)">Agregar al carrito</button>
+          </div>
           </div>
           <div class="plato-carta">
             <div class="title-plato-carta">
@@ -156,6 +200,10 @@
             <div class="precio-plato-carta">
               <span>$ 13.600</span>
             </div>
+            <div class="box-button">
+              <!-- <button class="button-pedi-ahora" type="button" onclick="pediAhora()">Comprar</button> -->
+              <button  class="boton_ag" onclick="agregarAlCarrito('Sauvignon blanc', 13600)">Agregar al carrito</button>
+          </div>
           </div>
           <div class="plato-carta">
             <div class="title-plato-carta">
@@ -165,6 +213,10 @@
             <div class="precio-plato-carta">
               <span>$ 14.000</span>
             </div>
+            <div class="box-button">
+              <!-- <button class="button-pedi-ahora" type="button" onclick="pediAhora()">Comprar</button> -->
+              <button  class="boton_ag" onclick="agregarAlCarrito('Gewürztraminer', 14000)">Agregar al carrito</button>
+          </div>
           </div>   
         </div>
         <!-- <div class="wrap-title-section">
@@ -253,7 +305,7 @@
       <br>
       <p>© 2024 <strong class="strong-footer">Vinos_AC</strong> Derechos Reservados.</p>
   </footer>
-    
+  <script src="./carrito/script.js"></script> 
 </body>
 
 </html>

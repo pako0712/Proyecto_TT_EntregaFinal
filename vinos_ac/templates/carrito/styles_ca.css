@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.product {
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#carrito {
+    list-style-type: none;
+    padding: 0;
+}
+
+#carrito li {
+    background-color: #f1f1f1;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#carrito li button {
+    background-color: #dc3545;
+    margin-left: 50px;
+}
+
+#carrito li button:hover {
+    background-color: #c82333;
+}
+
+/* Estilo para el mensaje de agradecimiento */
+.mensaje {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 128, 0, 0.8);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-size: 24px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+.mensaje.visible {
+    display: block;
+    opacity: 1;
+}

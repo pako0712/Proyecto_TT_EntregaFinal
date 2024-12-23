@@ -219,7 +219,7 @@ footer {
 
 .box-title {
     background-color: grey;
-    color: #000;
+    color: whitesmoke;
     text-align: center;
     margin: 0 auto;
     padding: 3px;
@@ -401,6 +401,8 @@ padding-bottom: 2rem; /* agregado por joaquin para separar esteticamente del foo
 
 }
 
+
+
 .logo{
     border: #E40C0C solid;
     border-radius: 100%;
@@ -546,6 +548,12 @@ p{
     text-align: center;
     font-size: 1.5em;
 
+  }
+
+  .boton_ag {
+      color:black;
+      font-weight: bold;
+      
   }
 
 
